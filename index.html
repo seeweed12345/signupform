@@ -11,21 +11,23 @@
     <div class="page">
         <div class="left">
             <img class="bus" src="bus.jpg">
+            <div class="logo-background"></div>
+                <img class="odinlogo" src="odinlogo.png">
 
         </div>
         <div class="right">
             <div class="header">
                 <div class="header-top">This is not a real online service! You know you need something like this in your life you help you realize your deepest dreams. 
                     Sign up now to get started.</div>
-                <div class="header-bottom">You know you want to.</div>
+                <div class="header-bottom">You <em>know</em> you want to.</div>
             </div>
             <div class="form-title">Let's do this!</div>
             <div class="form">
-                <form method="post">
+                <form id= "create-account" method="post">
                     <div class="left-form">
                         <div class="first-name">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first-name" required>
                         </div>
                         <div class="email">
                             <label for="email">EMAIL</label>
@@ -33,34 +35,37 @@
                         </div>
                         <div class="password">
                             <label for="first-name">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" onkeyup='check();' required>
                         </div>
                     </div>
                     <div class="right-form">
                         <div class="last-name">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last-name" required>
                         </div>
                         <div class="phone-numer">
                             <label for="phone-number">PHONE NUMBER</label>
-                            <input type="tel" id="phone-number" name="phone-number">
+                            <input type="tel" id="phone-number" name="phone-number" required>
                         </div>
                         <div class="confirm-password">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password">
+                            <input type="password" id="confirm-password" name="confirm-password" onkeyup='check();' required>
+                             <span id='message'></span>
                         </div>
                     </div>
     
                 </form>
             </div>
             <div class="submit-button">
+                <button class="submitdis" type="submit" form="create-account">Create Account</button>
 
             </div>
             <div class="footer">
-
+                <div class="footer-left">Already have an account?</div>
+                <div class="footer-right">Log in</div>
             </div>
         </div>
     </div>
-    
+    <script src="javascript.js"></script> 
 </body>
 </html>

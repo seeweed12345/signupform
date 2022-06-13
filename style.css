@@ -1,6 +1,6 @@
 * {
-    --page-width: 1200px;
-    --page-height: 850px;
+    --page-width: 1000px;
+    --page-height: 700px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 .page {
@@ -8,37 +8,73 @@
     width: var(--page-width);
     height: var(--page-height);
     margin: auto;
+
+}
+
+.left {
+    position: relative;
 }
 
 .bus {
     width: calc(var(--page-width) / 3);
     height: var(--page-height);
-    
+}
+
+.odinlogo {
+    position: absolute;
+    top: 150px;
+    left: 140px;
+    width: 50px;
+    height: auto;
+}
+
+
+.logo-background {
+    background-color: black;
+    position: absolute;
+    opacity: 50%;
+    top: 140px;
+    left: 0;
+    width: calc(var(--page-width) / 3);
+    min-height: 80px;
 }
 
 .right {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    background-color: rgb(228, 228, 228);
 }
 
 .header {
     height: calc(var(--page-height) / 3);
-    max-width: 400px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 30px;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.header-bottom {
+    margin-top: 20px;
 }
 
 form {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    background-color: white;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 4px 5px -5px gray;
+
 }
 
 .form-title {
-    align-self: stretch;
+    background-color: white;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 label {
@@ -49,4 +85,31 @@ label, input {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.submitdis {
+    background-color: rgb(33, 110, 197);
+    color: white;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.footer-right {
+    color: rgb(33, 110, 197);
+    margin-left: 3px;
+}
+
+#message {
+    font-size: 10px;
 }
