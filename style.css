@@ -1,0 +1,52 @@
+* {
+    --page-width: 1200px;
+    --page-height: 850px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.page {
+    display: flex;
+    width: var(--page-width);
+    height: var(--page-height);
+    margin: auto;
+}
+
+.bus {
+    width: calc(var(--page-width) / 3);
+    height: var(--page-height);
+    
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.header {
+    height: calc(var(--page-height) / 3);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.form-title {
+    align-self: stretch;
+}
+
+label {
+    font-size: 10px;
+    margin-top: 15px;
+}
+label, input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
